@@ -4,7 +4,9 @@ export default function Functionco() {
     return(
     <header>
         <nav className="navbar">
-            <div className="logo">MyWebsite</div>
+            <div className="logo">
+                <img src="/logo.png" alt="" />
+            </div>
             <ul className="nav-links">
                 <li><a href="#home"><i className="fas fa-home"></i> Home</a></li>
                 <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>
