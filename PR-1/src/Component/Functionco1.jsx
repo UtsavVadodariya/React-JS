@@ -4,9 +4,9 @@ export default function Functionco1() {
     return (
         <div>
             <section className="main-content">
-                <h1>Welcome to My Website</h1>
-                <p>This is a sample web page designed for a competition. It includes a navbar, main content section, and a footer.</p>
-                <img src="/4.jpeg" alt="Sample Image" />
+                <h1>We bulid beautiful digital experiences</h1>
+                <p>A beautiful and easy to use template that lets you create the perfect website for your future agency or business.</p>
+                <img src="/4.jpeg" alt=" " />
             </section>
             <section className="features">
                 <h2>Our Features</h2>
@@ -14,13 +14,13 @@ export default function Functionco1() {
                 <div className="feature-cards">
                     <div className="feature-card">
                         <img src="/feature.webp" alt="Feature 1" />
-                        <h3>Feature One</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non dolor vitae purus ultrices tristique.</p>
+                        <h3>Launch Quickly</h3>
+                        <p>Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.</p>
                     </div>
                     <div className="feature-card">
                         <img src="/feature1.jpg" alt="Feature 2" />
-                        <h3>Feature Two</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non dolor vitae purus ultrices tristique.</p>
+                        <h3>Stylish Design</h3>
+                        <p> Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin.</p>
                     </div>
                 </div>
             </section>
@@ -29,16 +29,16 @@ export default function Functionco1() {
                 <p>We value feedback from our clients. Here's what they have to say about our services.</p>
                 <div className="testimonial-cards">
                     <div className="testimonial-card">
-                        <img src="/1.webp" alt="Client 1" />
-                        <blockquote>"The service was fantastic! Highly recommend to everyone."</blockquote>
+                        <img src="/1.webp"  alt="Client 1" />
+                        <p>"The service was fantastic! Highly recommend to everyone."</p>
                     </div>
                     <div className="testimonial-card">
                         <img src="/2.jpg" alt="Client 2" />
-                        <blockquote>"A wonderful experience from start to finish. The team exceeded our expectations."</blockquote>
+                        <p>"A wonderful experience from start to finish. The team exceeded our expectations."</p>
                     </div>
                     <div className="testimonial-card">
                         <img src="/3.webp" alt="Client 3" />
-                        <blockquote>"Professional and reliable. We are very satisfied with the results."</blockquote>
+                        <p>"Professional and reliable. We are very satisfied with the results."</p>
                     </div>
                 </div>
             </section>
