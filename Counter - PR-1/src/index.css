@@ -1,0 +1,44 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main1 {
+  background-image: url('/bg7 (2).jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+}
+.button:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+
+}
+.main{
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.1); /* Black with 50% opacity */
+  backdrop-filter: blur(10px); /* Adjust the blur amount */
+  text-align: center;
+  color: white; /* White text for contrast */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+  padding-top: 186px;
+}
