@@ -13,7 +13,6 @@ export default function Form() {
 
   const addData = (e) => {
     e.preventDefault();
-    // Check if email and password are not empty
     if (email === "" || password === "") {
       alert("Both email and password are required");
       return;
@@ -21,7 +20,7 @@ export default function Form() {
 
     const newEntry = { email, password };
     setAllEntry([...allEntry, newEntry]);
-    setEmail(""); // Clear the input fields after submission
+    setEmail(""); 
     setPassword("");
   };
 
@@ -45,7 +44,7 @@ export default function Form() {
                     placeholder='Enter Email'
                     ref={emailInput}
                     className='input1'
-                    value={email}
+                    value={email} 
                     onChange={(e) => setEmail(e.target.value)}
                   /> <br /><br />
                   <input
@@ -66,37 +65,37 @@ export default function Form() {
 
         <div className="entries">
           <center>
-          <br />
-          <h2>Submitted Entries:</h2>
-          {allEntry.length === 0 ? (
-            <p>No entries</p>
-          ) : (
-            <table>
-              <thead>
-                <tr>
-                  <th>Email</th>
-                  <th>Password</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {allEntry.map((entry, index) => (
-                  <tr key={index}>
-                    <td>{entry.email}</td>
-                    <td>{entry.password}</td>
-                    <td>
-                      <button onClick={() => deleteEntry(index)} className='delete-btn'>Delete</button>
-                    </td>
+            <br />
+            <h2>Submitted Entries:</h2>
+            {allEntry.length === 0 ? (
+              <p>No entries</p>
+            ) : (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Actions</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-                  </center>
+                </thead>
+                <tbody>
+                  {allEntry.map((entry, index) => (
+                    <tr key={index}>
+                      <td>{entry.email}</td>
+                      <td>{entry.password}</td>
+                      <td>
+                        <button onClick={() => deleteEntry(index)} className='delete-btn'>Delete</button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </center>
 
         </div>
       </div>
-      
+
     </div>
   );
 }
