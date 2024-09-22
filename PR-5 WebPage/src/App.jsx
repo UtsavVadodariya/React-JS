@@ -1,11 +1,10 @@
 import React from 'react'
-import Webpage from './Components/Webpage'
+import Web from './Components/Web'
 
 export default function App() {
   return (
     <div>
-      ashgsajb
-      <Webpage/>
+      <Web/>
     </div>
   )
 }
