@@ -9,31 +9,44 @@ export default function LocalStorage() {
     const [editindex, setEditIndex] = useState(null);
 
     useEffect(() => {
-        let deta = JSON.parse(localStorage.getItem("student")) || []
-        setRecord(deta)
-    }, [record])
+        let data = JSON.parse(localStorage.getItem("student")) || []
+        setRecord(data)
+    }, [])
 
     const handeladd = () => {
-        let deta = { id: Date.now(), name, subject, city }
-        record.push(deta);
-        localStorage.setItem("student", JSON.stringify(record))
+        let data = { id: Date.now(), name, subject, city }
+        let oldRecord = JSON.parse(localStorage.getItem("Student")) || []
+        if(editindex){
+            let singledata = record.find((item)=> item.id == editindex);
+            singledata.id = editindex
+            singledata.name = name
+            singledata.subject = subject
+            singledata.city = city
+            localStorage.setItem("Student",JSON.stringify(record))
+            setEditIndex(null)
+        }
+        else{
+            oldRecord.push(data)
+            setRecord(oldRecord)
+            localStorage.setItem("Student",JSON.stringify(oldRecord))
+        }
         setName("");
         setSubject("");
         setCity("");
     }
 
     const handleDelete = (id) => {
-        let deletedeta = record.filter((item) => item.id != id)
-        setRecord(deletedeta)
-        localStorage.setItem("student", JSON.stringify(deletedeta))
+        let deletedata = record.filter((item) => item.id != id)
+        setRecord(deletedata)
+        localStorage.setItem("student", JSON.stringify(deletedata))
     }
 
     const handleEdit = (id) => {
-        let singleDeta = record.find((item) => item.id == id)
+        let singledata = record.find((item) => item.id == id)
 
-        setName(singleDeta.name)
-        setSubject(singleDeta.subject)
-        setCity(singleDeta.city)
+        setName(singledata.name)
+        setSubject(singledata.subject)
+        setCity(singledata.city)
         setEditIndex(id)
     }
     return (
