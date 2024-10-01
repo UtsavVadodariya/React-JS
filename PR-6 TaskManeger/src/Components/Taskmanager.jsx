@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Input from '@mui/material/Input';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-
-
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 export default function Taskmanager() {
     const [task, setTask] = useState('');
     const [record, setRecord] = useState([]);
     const [editIndex, setEditIndex] = useState(null);
+    const [error, setError] = useState('');
 
     useEffect(() => {
         let data = JSON.parse(localStorage.getItem("student")) || [];
@@ -16,6 +15,11 @@ export default function Taskmanager() {
     }, []);
 
     const handleAdd = () => {
+        if (!task.trim()) {
+            setError('Task name cannot be empty!');
+            return;
+        }
+
         let data = { id: Date.now(), task, status: "Pending" }; 
         let oldRecord = JSON.parse(localStorage.getItem("student")) || [];
 
@@ -30,6 +34,7 @@ export default function Taskmanager() {
             localStorage.setItem("student", JSON.stringify(oldRecord));
         }
         setTask("");
+        setError(''); 
     };
 
     const handleDelete = (id) => {
@@ -55,12 +60,16 @@ export default function Taskmanager() {
         localStorage.setItem("student", JSON.stringify(updatedRecords));
     };
 
+    const handleCloseSnackbar = () => {
+        setError('');
+    };
+
     return (
         <div>
             <h1>Taskmanager</h1>
             <center>
-            <TextField id="outlined-basic" label="Task Name" variant="outlined" value={task} onChange={(e) => setTask(e.target.value)}/>
-            <button onClick={handleAdd}>{editIndex ? "Update" : "Add"}</button>
+                <TextField  id="outlined-basic"  label="Task Name*"   variant="outlined"  value={task}  onChange={(e) => setTask(e.target.value)} />
+                <button onClick={handleAdd}>{editIndex ? "Update" : "Add"}</button>
             </center>
             <table border="1" width="50%">
                 <thead>
@@ -72,30 +81,31 @@ export default function Taskmanager() {
                     </tr>
                 </thead>
                 <tbody>
-                    {record.length > 0 ? (
-                        record.map((e, i) => (
-                            <tr key={i}>
-                                <td>{i + 1}</td>
-                                <td>{e.task}</td>
-                                <td>{e.status}</td> 
-                                <td>
-                                    <button onClick={() => handleEdit(e.id)}>Edit</button>
-                                </td>
-                                <td>
-                                    <button onClick={() => handleComplete(e.id)} >
-                                        Complete
-                                    </button>
-                                </td>
-                                <td>
-                                    <button onClick={() => handleDelete(e.id)}>Delete</button>
-                                </td>
-                            </tr>
-                        ))
-                    ) : 
-                    ""
-                    }
+                    {record.map((e, i) => (
+                        <tr key={i}>
+                            <td>{i + 1}</td>
+                            <td>{e.task}</td>
+                            <td>{e.status}</td> 
+                            <td>
+                                <button onClick={() => handleEdit(e.id)}>Edit</button>
+                            </td>
+                            <td>
+                                <button onClick={() => handleComplete(e.id)} >
+                                    Complete
+                                </button>
+                            </td>
+                            <td>
+                                <button onClick={() => handleDelete(e.id)}>Delete</button>
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
+            <Snackbar open={Boolean(error)} autoHideDuration={10000} onClose={handleCloseSnackbar}>
+                <Alert onClose={handleCloseSnackbar} severity="error">
+                    {error}
+                </Alert>
+            </Snackbar>
         </div>
     );
 }
