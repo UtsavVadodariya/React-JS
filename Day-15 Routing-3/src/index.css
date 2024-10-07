@@ -1,0 +1,208 @@
+/* Styling the main container */
+div {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling the header */
+  h1 {
+    color: #34495e;
+    font-size: 3em;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #3498db;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  /* Styling the links as buttons */
+  a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  a:hover {
+    background: linear-gradient(135deg, #9b59b6, #e74c3c);
+    transform: translateY(-5px);
+  }
+  button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #9b59b6, #e74c3c);
+    transform: translateY(-5px);
+  }
+  
+  /* Styling the table */
+  table {
+    width: 80%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ecf0f1;
+  }
+  
+  tbody tr:hover {
+    background-color: #dfe6e9;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Font styling for table text */
+  td {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  
+  /* Add spacing between links */
+  div a {
+    margin-right: 20px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    table {
+      width: 95%;
+    }
+  
+    a {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    th, td {
+      padding: 15px;
+    }
+  }
+  /* Styling the main container */
+div {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Styling the header */
+  h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Styling the input fields */
+  input {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #2c3e50;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #9b59b6;
+    outline: none;
+  }
+  
+  /* Styling the button */
+  button {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Centered container and layout adjustments */
+  div input, div button {
+    margin: 10px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    input, button {
+      width: 95%;
+      padding: 12px;
+    }
+  }
+  
