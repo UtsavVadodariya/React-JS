@@ -61,6 +61,7 @@ div {
     font-weight: 600;
     transition: background 0.3s ease-in-out, transform 0.2s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
   }
   
   button:hover {
@@ -175,23 +176,7 @@ div {
   }
   
   /* Styling the button */
-  button {
-    width: 80%;
-    max-width: 500px;
-    padding: 15px;
-    background-color: #3498db;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+ 
   
   /* Centered container and layout adjustments */
   div input, div button {
