@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FF6F61, #6A82FB); /* Bold gradient from coral to soft blue */
+  position: relative; /* For positioning the Snackbar */
+}
+
+.main1 {
+  background: #ffffff; /* Card background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger title */
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Form Fields */
+.MuiTextField-root, .MuiFormControl-root {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input, .MuiTextField-root {
+  background-color: #f3f4f6; /* Light gray input background */
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+input:focus, .MuiTextField-root:hover {
+  border-color: #6A82FB; /* Bright blue on focus */
+  box-shadow: 0 0 8px rgba(106, 130, 251, 0.5);
+}
+
+
+.MuiSelect-root {
+  background-color: #f3f4f6; /* Light gray select background */
+  border-radius: 8px;
+  color: #2d2d2d; /* Dark text for select */
+}
+
+button, .MuiButton-root {
+  color: #ffffff; /* White text for buttons */
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* No hover effects */
+
+/* Todo List Items */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background-color: #f9f9f9; /* Very light gray for list items */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+li:hover {
+  background-color: #f0f0f0; /* Slightly darker gray on hover */
+}
+
+.MuiButton-outlined {
+  margin: 0 5px;
+  border-color: #FF6F61; /* Bright coral border */
+  color: #FF6F61; /* Bright coral text */
+  border-radius: 8px;
+}
+
+/* Snackbar */
+.MuiSnackbar-root {
+  font-size: 1rem;
+}
+
+.MuiAlert-filledError {
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+/* Error message styling */
+.error-message {
+  position: absolute; /* Position it at the top-right corner */
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox Labels */
+label {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.3);
+  filter: brightness(1.1);
+}
+
+/* Animations for extra creativity */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
