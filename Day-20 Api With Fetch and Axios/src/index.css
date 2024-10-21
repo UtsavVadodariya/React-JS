@@ -1,0 +1,145 @@
+/* ApiWithFetch.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.api-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h1:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #2ecc71;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Uniform Image Styling */
+.product-image-container {
+  width: 100%;
+  height: 250px; /* Fixed height for all images */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures all images cover the container uniformly */
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #2ecc71;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.product-info p {
+  margin: 0;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .product-image-container {
+      height: 200px; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+      font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  .product-image-container {
+      height: 180px; /* Adjust height for mobile */
+  }
+
+  .product-title {
+      font-size: 18px;
+  }
+
+  .product-price {
+      font-size: 16px;
+  }
+
+  .product-description {
+      font-size: 12px;
+  }
+}
