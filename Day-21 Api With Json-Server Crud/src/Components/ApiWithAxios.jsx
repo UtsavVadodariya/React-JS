@@ -68,9 +68,9 @@ export default function ApiWithAxios() {
     }
   };
 
-  const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/data/${id}`); // Call API to delete item
-    setData(data.filter((item) => item.id !== id));
+  const handleDelete =  (id) => {
+    let deleteData = data.filter((item)=> item.id != id);
+    setData(deleteData)
   };
 
   return (
