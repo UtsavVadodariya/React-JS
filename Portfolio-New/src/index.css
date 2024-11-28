@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Figtree", sans-serif;
+  scroll-behavior: smooth;
+}
+.main1{
+  background-image: url(./103.png);
+  height: 830vh;
+  background-position:center;
+  background-repeat: repeat-y;
+}
+.main2{
+  background-image: url(./116.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.d1{
+  background-image: url(./122.png);
+  background-repeat: no-repeat;
+}
+.d3{
+  background-image: url(./123.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.d5{
+  background-image: url(./122.png);
+  background-repeat: no-repeat;
+}
+.stroke-orange-500 {
+  -webkit-text-stroke: 1.5px #f97316;
+}
+.span1{
+  font-family: "Playfair", serif;
+}
+.d6{
+  background-image: url(./122.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.d7{
+  background-image: url(./123.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.footer{
+  background-image: url(./158.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.input1::placeholder{
+  color: white;
+}
+.d8{
+  background-image: url(./133.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.d9{
+  background-image: url(./133.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.d11{
+  background-image: url(./133.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.d12{
+  background-image: url(./133.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.d13{
+  background-image: url(./133.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
