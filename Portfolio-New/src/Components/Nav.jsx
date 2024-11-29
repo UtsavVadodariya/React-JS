@@ -2,14 +2,12 @@ import React from 'react'
 
 export default function Nav() {
     return (
-        <div className="mt-[50px]">
+        <div className="mt-[100px] h-[100vh]">
       <div className="bg-[#f4f4f6] pb-[70px]">
-        {/* Logo Section */}
-        <div className="logo h-[108px] w-[200px] sm:w-[250px] pt-[24px] px-[32px] flex justify-center border bg-white mx-auto">
+        <div className="logo h-[108px] w-[300px] sm:w-[250px] pt-[24px] px-[32px] flex justify-center border bg-white mx-auto">
           <img src="./101.png" alt="Logo" className="h-[70px] w-[75px]" />
         </div>
 
-        {/* Navigation Links */}
         <center>
           <a href="#home">
             <div className="flex pl-4 sm:pl-7 gap-4 items-center border w-[150px] sm:w-[186px] h-[48px] mt-[20px] rounded-[4px] uppercase font-semibold bg-white">

@@ -14,6 +14,9 @@ export default function Signup() {
         console.log(user);
         if(user){
             navigate("/dashboard")
+            setEmail("")
+            setPassword("")
+
         }
         
     }

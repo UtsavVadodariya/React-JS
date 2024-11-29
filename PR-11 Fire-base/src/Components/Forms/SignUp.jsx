@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import '../Forms/SignUp.css'
 import { useNavigate } from 'react-router-dom'
 import { auth, database } from '/firebaseConfig'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
-import { toast, ToastContainer } from 'react-toastify';
+import {  ToastContainer } from 'react-toastify';
 
 export default function SignUp() {
 

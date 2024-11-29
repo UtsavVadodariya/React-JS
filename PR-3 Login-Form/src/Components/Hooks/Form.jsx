@@ -46,7 +46,7 @@ export default function Form() {
                     className='input1'
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)}
-                  /> <br /><br />
+                  /> <br/><br />
                   <input
                     type="password"
                     placeholder='Enter Password'

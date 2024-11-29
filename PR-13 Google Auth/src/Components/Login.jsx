@@ -47,7 +47,7 @@ export default function Login() {
                                     <input
                                         type="text"
                                         className="input1"
-                                        placeholder="Enter Name"
+                                        placeholder="Enter UserName"
                                         onChange={(e) => setName(e.target.value)}
                                     /> <br /><br />
                                     <input
@@ -64,8 +64,9 @@ export default function Login() {
                                     />  <br /><br />
                                     <button className="btn" onClick={handlelogin}>
                                         Sign In
-                                    </button> <br /><br />
-                                    <button className="btn" onClick={handleGoogle}>
+                                    </button> 
+                                        <br /><br />
+                                    <button className="btn" onClick={handleGoogle}> <img src="/logo.png" alt=""  className='logo'/>
                                         Sign In with Google
                                     </button>
                                 </div>

@@ -1,46 +1,47 @@
 import React from 'react'
 
 export default function Home() {
-    const handleDownload = () => {
-      const link = document.createElement("a");
-      link.href = "/Utsav_Resume.pdf"; 
-      link.download = "Utsav-CV.pdf";
-      link.click();
-    }
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Utsav_Resume.pdf";
+    link.download = "Utsav-CV.pdf";
+    link.click();
+  }
+
   return (
     <div className='pt-[45px] pl-[60px]'>
-      
+
       <div className="font-medium" id="home">
-  <h1 className="text-[24px] items-center">
-    <img src="./112.svg" alt="" className="inline-block mt-[-10px]" />Hi I'm Utsav Vadodariya
-  </h1>
+        <h1 className="text-[24px] items-center">
+          <img src="./112.svg" alt="" className="inline-block mt-[-10px]" />Hi I'm Utsav Vadodariya
+        </h1>
 
-  <h1 className="text-[64px] font-semibold ml-2 text-center sm:text-left">
-    A FULL-STACK DEVELOPER
-  </h1>
+        <h1 className="text-[64px] font-semibold ml-2 text-center sm:text-left">
+          A FULL-STACK DEVELOPER
+        </h1>
 
-  <div className="img flex flex-wrap justify-center sm:justify-start">
-    <div className="main2 border-green-600 w-[550px] h-[500px] mt-[135px] relative">
-      <img src="./117.png" alt="" className="absolute bottom-7" />
-      <img src="./115.png" alt="" className="absolute top-12" />
-      <img src="./114.png" alt="" className="absolute left-[435px] top-[320px]" />
-    </div>
+        <div className="img flex flex-wrap justify-center sm:justify-start">
+          <div className="main2 border-green-600 w-[550px] h-[500px] mt-[135px] relative">
+            <img src="./117.png" alt="" className="absolute bottom-7" />
+            <img src="./115.png" alt="" className="absolute top-12" />
+            <img src="./114.png" alt="" className="absolute left-[435px] top-[320px]" />
+          </div>
 
-    <div className="flex flex-col items-center sm:items-start">
-      <p className="h-[90px] w-[90%] sm:w-[526px] text-[20px] mt-[165px] text-[#5d626f] text-center sm:text-left">
-        As a dedicated professional with a passion for PICO, I bring 6+ Months of experience in development throughout my best work.
-      </p>
-<a href="file:///C:/Users/Utsav/Downloads/Utsav_Resume.pdf" target='_blank'>
-      <button className="h-[49.1px] w-[200.15px] fill-white mt-12 rounded-[4px] flex items-center justify-center bg-gradient-to-r from-[#fc6936] to-[#fa9432] uppercase"  onClick={handleDownload}>
-        <img src="./118.svg" alt="" className="inline-block fill-white" /> Download CV
-      </button>
-      </a>
-      <h1 className="text-[24px] font-semibold mt-[160px] ml-[110px] text-center sm:text-left">
-        Digital Marketing On
-      </h1>
-    </div>
-  </div>
-</div>
+          <div className="flex flex-col items-center sm:items-start">
+            <p className="h-[90px] w-[90%] sm:w-[526px] text-[20px] mt-[165px] text-[#5d626f] text-center sm:text-left">
+              As a dedicated professional with a passion for PICO, I bring 6+ Months of experience in development throughout my best work.
+            </p>
+            <a href="file:///C:/Users/Utsav/Downloads/Utsav_Resume.pdf" target='_blank'>
+              <button className="h-[49.1px] w-[200.15px] fill-white mt-12 rounded-[4px] flex items-center justify-center bg-gradient-to-r from-[#fc6936] to-[#fa9432] uppercase" onClick={handleDownload}>
+                <img src="./118.svg" alt="" className="inline-block fill-white" /> Download CV
+              </button>
+            </a>
+            <h1 className="text-[24px] font-semibold mt-[160px] ml-[110px] text-center sm:text-left">
+              Digital Marketing On
+            </h1>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -223,9 +224,9 @@ export default function Home() {
           <div className='relative '>
             <div>
               <a href="https://courageous-creponne-886e6c.netlify.app/" target='_blank'>
-              <div className='h-[340px] w-[480px] overflow-hidden mt-[50px] rounded-[4px] '>
-                <img src="1.jpeg" alt="" />
-              </div>
+                <div className='h-[340px] w-[480px] overflow-hidden mt-[50px] rounded-[4px] '>
+                  <img src="1.jpeg" alt="" />
+                </div>
               </a>
               <div className='h-[148px] w-[424.32px] bg-white rounded-[4px] px-[28px] py-[24px] flex flex-col justify-center absolute top-[300px] left-[120px]'>
                 <h4 className='text-[16px] text-[#fd5105] font-semibold uppercase'>#prectice webpage</h4>
@@ -234,10 +235,10 @@ export default function Home() {
             </div>
 
             <div>
-              <a href="https://ephemeral-chimera-ee9826.netlify.app/"  target='_blank'>              
-              <div className='h-[340px] w-[480px] overflow-hidden mt-[120px] rounded-[4px]'>
-                <img src="3.jpeg" alt="" />
-              </div></a>
+              <a href="https://ephemeral-chimera-ee9826.netlify.app/" target='_blank'>
+                <div className='h-[340px] w-[480px] overflow-hidden mt-[120px] rounded-[4px]'>
+                  <img src="3.jpeg" alt="" />
+                </div></a>
               <div className='h-[148px] w-[424.32px] bg-white rounded-[4px] px-[28px] py-[24px] flex flex-col justify-center absolute top-[770px] left-[120px]'>
                 <h4 className='text-[16px] text-[#fd5105] font-semibold uppercase'>#prectice webpage</h4>
                 <a className='text-[20px] text-black font-semibold uppercase' href="">html, css, bootstap, javascript</a>
@@ -248,11 +249,11 @@ export default function Home() {
           <div>
             <div className='relative'>
               <div className='pt-[70px] '>
-              <a href="https://glittering-shortbread-71b380.netlify.app/" target='_blank'>
-              
-                <div className='h-[340px] w-[480px] overflow-hidden mt-[50px] rounded-[4px]'>
-                  <img src="2.jpeg" alt="" />
-                </div>
+                <a href="https://glittering-shortbread-71b380.netlify.app/" target='_blank'>
+
+                  <div className='h-[340px] w-[480px] overflow-hidden mt-[50px] rounded-[4px]'>
+                    <img src="2.jpeg" alt="" />
+                  </div>
                 </a>
                 <div className='h-[148px] w-[424.32px] bg-white rounded-[4px] px-[28px] py-[24px] flex flex-col justify-center absolute top-[400px] left-[120px]'>
                   <h4 className='text-[16px] text-[#fd5105] font-semibold uppercase'>#prectice webpage</h4>
@@ -262,9 +263,9 @@ export default function Home() {
 
               <div>
                 <a href="https://willowy-melomakarona-225511.netlify.app/" target='_blank'>
-                <div className='h-[340px] w-[480px] overflow-hidden mt-[140px] rounded-[4px]'>
-                  <img src="4.jpeg" alt="" />
-                </div>
+                  <div className='h-[340px] w-[480px] overflow-hidden mt-[140px] rounded-[4px]'>
+                    <img src="4.jpeg" alt="" />
+                  </div>
                 </a>
                 <div className='h-[148px] w-[424.32px] bg-white rounded-[4px] px-[28px] py-[24px] flex flex-col justify-center absolute top-[870px] left-[120px]'>
                   <h4 className='text-[16px] text-[#fd5105] font-semibold uppercase'>#prectice webpage</h4>
@@ -279,7 +280,9 @@ export default function Home() {
 
       <div className='contact h-[832px] w-[1052px]  mt-[400px] flex pt-[48px] pr-[48px] pb-[225px] pl-[48px] relative bg-white' id='contact'>
         <div className='h-[558px] w-[302.15px] bg-[#f4f4f6] p-[24px] rounded-[4px]'>
-          <h1 className='text-[24px] text-black font-semibold uppercase'>leave a message</h1>
+          <center>
+            <h1 className='text-[24px] text-black font-semibold uppercase'>leave a message</h1>
+          </center>
 
           <input type="text" placeholder='Full Name' className='h-[48px] rounded-[4px] w-[252.52px] bg-white p-[16px] mt-[20px]' />
           <input type="tel" placeholder='Phone Number' className='h-[48px] rounded-[4px] w-[252.52px] bg-white p-[16px] mt-[20px]' />
@@ -340,19 +343,19 @@ export default function Home() {
                 </div>
                 <div className='w-[161.48px] h-[56px]  bg-[#fb8c1a] rounded-[4px] px-[11px] py-[19px] flex justify-center items-center'>
                   <img src="./160.svg" alt="" className='h-[34px] w-[34px] ml-[12px] ' />
-                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>facebook</a>
+                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>instagram</a>
                 </div>
                 <div className='w-[161.48px] h-[56px]  bg-[#fb8c1a] rounded-[4px] px-[11px] py-[19px] flex justify-center items-center'>
                   <img src="./161.svg" alt="" className='h-[34px] w-[34px] ml-[12px] ' />
-                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>facebook</a>
+                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>pintrest</a>
                 </div>
                 <div className='w-[161.48px] h-[56px]  bg-[#fb8c1a] rounded-[4px] px-[11px] py-[19px] flex justify-center items-center'>
                   <img src="./162.svg" alt="" className='h-[34px] w-[34px] ml-[12px] ' />
-                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>facebook</a>
+                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>linkdin</a>
                 </div>
                 <div className='w-[161.48px] h-[56px]  bg-[#fb8c1a] rounded-[4px] px-[11px] py-[19px] flex justify-center items-center'>
                   <img src="./163.svg" alt="" className='h-[34px] w-[34px] ml-[12px] ' />
-                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>facebook</a>
+                  <a href="" className='text-[14px] font-semibold ml-[6px] text-white uppercase'>dribble</a>
                 </div>
               </div>
 

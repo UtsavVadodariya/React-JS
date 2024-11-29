@@ -3,7 +3,6 @@ import { auth, database } from '/firebaseConfig'
 import React, { useEffect, useState } from 'react'
 import { onAuthStateChanged } from 'firebase/auth'
 import { Link } from 'react-router-dom';
-// import { FaUserCircle } from "react-icons/fa";
 
 export default function Nav() {
 

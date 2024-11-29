@@ -6,7 +6,7 @@ export default function ReduxThunk() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchApi());
+    dispatch(fetchApi());     
   }, [dispatch]);
 
   const record = useSelector((state) => state.apiKey);

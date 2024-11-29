@@ -14,7 +14,14 @@
   align-items: center;
   font-family: "Sawarabi Mincho", serif;  
 }
-
+.logo{
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  margin-right: 10px;
+  position: absolute;
+  left: 147px;
+}
 .input1{
   height: 40px;
   width: 270px;

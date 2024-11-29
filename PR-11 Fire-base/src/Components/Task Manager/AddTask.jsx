@@ -42,9 +42,9 @@ export default function AddTask() {
     };
 
     return (
-        <div className="add-task-container" style={{color:"black"}}>
-            <div className="form-container" style={{color:"black"}}>
-                <div className="form" style={{color:"black"}}>
+        <div className="add-task-container" style={{ color: "black" }}>
+            <div className="form-container" style={{ color: "black" }}>
+                <div className="form" style={{ color: "black" }}>
                     <h2>{editTask ? "Update Task" : "Add Task"}</h2>
 
                     <input
@@ -62,12 +62,7 @@ export default function AddTask() {
                         className="input-field"
                     ></textarea>
 
-                    <input
-                        type="date"
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                        className="input-field"
-                    />
+
 
                     <select
                         value={status}
@@ -91,13 +86,6 @@ export default function AddTask() {
                         <option value="low">Low</option>
                     </select>
 
-                    <input
-                        type="text"
-                        value={taskAssignTo}
-                        onChange={(e) => setTaskAssignTo(e.target.value)}
-                        placeholder="Assign Task To"
-                        className="input-field"
-                    />
 
                     <select
                         value={category}

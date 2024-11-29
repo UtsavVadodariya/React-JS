@@ -15,15 +15,15 @@ export default function MoneyManager() {
     const handleAmount = () => {
         if (income) {
             dispatch(addIncome(income));
-            setIncome(""); // Clear input after adding
+            setIncome(""); 
         }
     };
 
     const handleExpense = () => {        
         if (expense && description) {
             dispatch(addExpense({ expense, description }));  
-            setExpense(""); // Clear input after adding
-            setDescription(""); // Clear description input after adding
+            setExpense("");
+            setDescription(""); 
         }      
     };
 

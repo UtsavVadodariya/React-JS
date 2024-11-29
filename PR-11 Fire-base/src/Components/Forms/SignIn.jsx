@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../Forms/SignIn.css' // Keep this import for the external styles
 import { useNavigate } from 'react-router-dom'
 import { auth, database } from '/firebaseConfig'
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -47,7 +46,7 @@ export default function SignUp() {
                     <div className="subDiv1">
                         <center>
                             <img className='animated-img' src="bg3.png" alt="" />
-                            <p className='text-white text-3xl font-bold mt-3'>Welcome to Task Manager</p>
+                            <p className='text-white text-3xl font-bold mt-3'>Welcome Back To TaskManager</p>
                             <p className='text-white w-[80%]'>To keep connected with us please login with your personal info</p>
                         </center>
                     </div>
